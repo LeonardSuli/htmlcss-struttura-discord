@@ -1,0 +1,50 @@
+/* Debug */
+
+.debug #app_header{
+    background-color: rgb(173, 216, 230);
+}
+
+.debug #app_header .container{
+    background-color: rgb(218, 165, 32);
+    border: 1px dashed black;
+}
+
+
+
+
+
+
+/* Common */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#app_header .container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#app_header{
+    padding: 1rem;
+}
+
+#app_header ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+/* Utility */
