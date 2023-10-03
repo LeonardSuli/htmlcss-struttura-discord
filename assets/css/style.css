@@ -1,3 +1,5 @@
+
+
 /* Debug */
 
 .debug #app_header{
@@ -14,15 +16,13 @@
     height: 544px;
 }
 
-.debug main .box{
+.debug .box{
     background-color: rgb(238, 130, 238);
+    width: 800px;
+    height: 400px;
 }
 
-.debug .place{
-    background-color: white;
-}
-
-.debug .place .container{
+.debug .place .container, .debug footer .container{
     background-color: red;
     height: 700px;
 }
@@ -35,13 +35,11 @@
 .debug .col-2{
     background-color: lightgreen;
     height: 500px;
-    /* border: 1px dashed black; */
 }
 
 .debug .col-4{
     background-color: pink;
     height: 500px;
-    /* border: 1px dashed black; */
 }
 
 .debug .col-8{
@@ -50,34 +48,24 @@
 }
 
 .debug .col-12{
-    /* border: 1px dashed black; */
+    background-color: green;
+    height: 800px;
 }
 
-.debug [class^='col-']{
+.debug [class^='col-'], .debug .container, .debug .row{
     border: 1px dashed black;
 }
 
-.debug .found, section.contact{
+.debug .found, .debug .contact{
     background-color: lightgray;
-}
-
-.debug .contact .container{
-    background-color: green;
-    height: 1200px;
 }
 
 .debug footer{
     background-color: black;
 }
 
-.debug footer .container{
-    background-color: red;
-    height: 600px;
-}
-
-
 .debug .container-2{
-    background-color: brown;
+    background-color: lightsalmon;
 }
 
 .debug .logo-footer, .debug .button-footer{
@@ -113,7 +101,7 @@
     padding: 0.5rem;
 }
 
-#app_header ul, .contact{
+#app_header ul, section, .contact{
     display: flex;
 }
 
@@ -127,18 +115,15 @@ a{
 }
 
 /* Main */
- 
+
 .box{
-    width: 800px;
-    height: 400px;
     margin: auto;
     align-items: center;
 }
 
-.place{
-    padding: 1rem;
+footer .container{
+    padding: 1rem auto;
 }
-
 .container-2{
     display: flex;
     width: 70%;
@@ -168,4 +153,8 @@ a{
 
 .col-12{
     width: 100%;
+}
+
+footer{
+    padding: 1rem;
 }
