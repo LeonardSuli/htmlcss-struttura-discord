@@ -9,11 +9,12 @@
     border: 1px dashed black;
 }
 
-.debug main>.container{
+.debug .talk{
     background-color: rgb(0, 0, 139);
+    height: 544px;
 }
 
-.debug main .box-1{
+.debug main .box{
     background-color: rgb(238, 130, 238);
 }
 
@@ -23,22 +24,37 @@
 
 .debug .place .container{
     background-color: red;
+    height: 700px;
 }
 
-.debug .row-1{
+.debug .row{
     background-color: yellow;
+    height: 600px;
 }
 
 .debug .col-2{
     background-color: lightgreen;
+    height: 500px;
+    /* border: 1px dashed black; */
 }
 
 .debug .col-4{
     background-color: pink;
+    height: 500px;
+    /* border: 1px dashed black; */
 }
 
 .debug .col-8{
     background-color: lightseagreen;
+    height: 500px;
+}
+
+.debug .col-12{
+    /* border: 1px dashed black; */
+}
+
+.debug [class^='col-']{
+    border: 1px dashed black;
 }
 
 .debug .found, section.contact{
@@ -47,15 +63,25 @@
 
 .debug .contact .container{
     background-color: green;
+    height: 1200px;
+}
+
+.debug footer{
+    background-color: black;
 }
 
 .debug footer .container{
     background-color: red;
+    height: 600px;
 }
 
 
-.container-2{
+.debug .container-2{
     background-color: brown;
+}
+
+.debug .logo-footer, .debug .button-footer{
+    background-color: pink;
 }
 
 
@@ -68,23 +94,26 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 70%;
+    display: flex;
+    margin: 1rem auto;
+    align-items: center; 
+}
 
 /* Header */
 
 #app_header .container{
-    width: 70%;
     margin: auto;
-    display: flex;
     justify-content: space-between;
     padding: 0.5rem;
-    align-items: center;
 }
 
 #app_header{
     padding: 0.5rem;
 }
 
-#app_header ul, main .container, .row-1, .contact, .row-2{
+#app_header ul, .contact{
     display: flex;
 }
 
@@ -99,37 +128,15 @@ a{
 
 /* Main */
  
-main .container{
-    height: 544px;
-}
-
-.box-1{
+.box{
     width: 800px;
     height: 400px;
     margin: auto;
+    align-items: center;
 }
 
 .place{
     padding: 1rem;
-}
-
-.place .container{
-    width: 70%;
-    height: 700px;
-    margin: auto;
-    align-items: center; 
-}
-
-.contact  .container{
-    width: 70%;
-    height: 1200px;
-    margin: 1rem auto;
-}
-
-footer .container{
-    width: 70%;
-    height: 600px;
-    margin: 1rem auto;
 }
 
 .container-2{
@@ -140,37 +147,25 @@ footer .container{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-.row-1, .row-2{
-    width: 100%;
-    height: 600px;
-    align-items: center;
-}
 
+.row{
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
 
 .col-2{
     width: calc((100% / 12) * 2);
-    height: 500px;
-    border: 1px dashed black;
 }
 
 .col-4{
     width: calc((100% / 12) * 4);
-    height: 500px;
-    border: 1px dashed black;
 }
 
 .col-8{
     width: calc((100% / 12) * 8);
-    border: 1px dashed black;
-    height: 500px;
 }
 
 .col-12{
-    border: 1px dashed black;
     width: 100%;
 }
-
-
-
-
-/* Utility */
